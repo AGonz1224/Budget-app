@@ -113,3 +113,118 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* ===== Transactions Table ===== */
+#transactions {
+    margin: 50px auto 100px;
+    max-width: 800px;
+  }
+  
+  #transactions h2 {
+    color: #00ff99;
+    margin-bottom: 16px;
+  }
+  
+  .tx-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border: 1px solid #00ff99;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0,255,153,.25);
+  }
+  
+  .tx-table th, .tx-table td {
+    padding: 12px 14px;
+    text-align: left;
+  }
+  
+  .tx-table thead {
+    background: #0f0f0f;
+    border-bottom: 1px solid #00ff99;
+  }
+  
+  .tx-table tbody tr:nth-child(even) {
+    background: #161616;
+  }
+  
+  .tx-amount-income { color: #7CFFCA; font-weight: 700; }
+  .tx-amount-expense { color: #ff9ea8; font-weight: 700; }
+  .tx-type { opacity: .9; }
+  
+
+  /* ============================= */
+/* Transactions Table Styles     */
+/* ============================= */
+
+#transactions {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#transactions h2 {
+    color: #00ff7f;
+    margin-bottom: 1rem;
+}
+
+.tx-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 127, 0.2);
+}
+
+.tx-table th, .tx-table td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.tx-table th {
+    background-color: #262626;
+    color: #00ff7f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tx-table td {
+    color: #e5e5e5;
+}
+
+.tx-table tr:hover {
+    background-color: #2a2a2a;
+    transition: 0.2s ease;
+}
+
+/* ============================= */
+/* Row Colors & Buttons          */
+/* ============================= */
+
+.income-row td {
+    color: #00ff7f; /* neon green for income */
+  }
+  
+  .expense-row td {
+    color: #ff4d4d; /* red for expenses */
+  }
+  
+  .delete-btn {
+    background: transparent;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background: #ff4d4d;
+    color: #000;
+    border-color: #ff4d4d;
+  }
+  

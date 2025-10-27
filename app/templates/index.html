@@ -54,6 +54,23 @@
                 <button type="submit">Add</button>
             </form>
         </section>
+
+        <!-- Keep only ONE transactions section + unique tbody id -->
+        <section id="transactions">
+            <h2>Transactions</h2>
+            <table class="tx-table">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody id="tx-body">
+                <!-- JS will inject rows here -->
+              </tbody>
+            </table>
+        </section>
     </main>
 
     <footer>
