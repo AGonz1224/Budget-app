@@ -1,15 +1,15 @@
 # Author: Alberto Gonzalez
 # Project name: Budget App
 # Date started: October 20, 2025
-# Date last edited: October 20, 2025
+# Date last edited: October 22, 2025
 
-from flask import Flask
+from flask import Flask, render_template
 
 def create_app():
     app = Flask(__name__)
 
-    @app.route("/")
+    @app.route('/')
     def home():
-        return "Hello, world! Flask is working 🎉"
+        return render_template('index.html')
 
     return app

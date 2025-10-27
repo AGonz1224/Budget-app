@@ -1,0 +1,66 @@
+<!-- Author: Alberto Gonzalez -->
+<!-- Project: Budget App -->
+<!-- File Name: index.html -->
+<!-- Date Created: October 22, 2025 -->
+<!-- Date Last Edited: October 27, 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>💰 Budget App</h1>
+        <p>Track your income, expenses, and savings easily.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome</h2>
+            <p>This is your personal finance tracker. Start by adding your income and expenses!</p>
+        </section>
+
+        <section id="summary">
+            <h2>Monthly Summary</h2>
+            <div class="summary-cards">
+                <div class="card">
+                    <h3>Total Income</h3>
+                    <p id="total-income">$0.00</p>
+                </div>
+                <div class="card">
+                    <h3>Total Bills</h3>
+                    <p id="total-bills">$0.00</p>
+                </div>
+                <div class="card">
+                    <h3>Leftover</h3>
+                    <p id="leftover">$0.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="add-transaction">
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Description (e.g. Rent, Groceries)" required>
+                <input type="number" id="amount" placeholder="Amount ($)" required>
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Alberto Gonzalez — 2025</p>
+    </footer>
+
+    <!-- JS linked with defer so it loads after HTML -->
+    <script defer src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
